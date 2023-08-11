@@ -11,6 +11,7 @@ export class HeaderComponent {
   redirectToDetals(arg0: number) {
     throw new Error('Method not implemented.');
   }
+  cartItems=0
   menuType: string = "default"
   sellerName: string = ""
   userName: string = ""
@@ -39,6 +40,12 @@ export class HeaderComponent {
         
       }
     })
+    let cartData=localStorage.getItem('localCart');
+      if(cartData)
+      this.cartItems=JSON.parse(cartData).length;
+      this.product.cartData.subscribe((item)=>{
+        this.cartItems=item.length;
+      })
   }
   logout() {
     localStorage.removeItem('seller');

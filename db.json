@@ -87,12 +87,44 @@
       "email": "rakesh@gmail.com",
       "password": "1234",
       "id": 1
+    }
+  ],
+  "cart": [
+    {
+      "name": "I phone 13",
+      "price": "55000",
+      "color": "White",
+      "desc": "The Apple Product",
+      "category": "Mobile",
+      "image": "https://images.macrumors.com/article-new/2020/10/iphone-13-color-lineup.jpg",
+      "quantity": 1,
+      "userId": 2,
+      "productId": 4,
+      "id": 1
     },
     {
-      "name": "admin",
-      "email": "admin@gmail.com",
-      "password": "1234",
+      "name": "I phone 13",
+      "price": "55000",
+      "color": "White",
+      "desc": "The Apple Product",
+      "category": "Mobile",
+      "image": "https://images.macrumors.com/article-new/2020/10/iphone-13-color-lineup.jpg",
+      "quantity": 1,
+      "userId": 2,
+      "productId": 4,
       "id": 2
+    },
+    {
+      "name": "I phone 11 pro max",
+      "price": "42000",
+      "color": "Black",
+      "desc": "The Apple Product",
+      "category": "Mobile",
+      "image": "https://static.esrgear.com/blog/wp-content/uploads/2020/05/iPhone-11.jpg",
+      "quantity": 1,
+      "userId": 2,
+      "productId": 2,
+      "id": 3
     }
   ]
 }

@@ -23,7 +23,7 @@ export class UserService {
     this.http.get<Signup[]>(`http://localhost:3000/users?email=${data.email}&password=${data.password}`,
       { observe: 'response' }).subscribe((result: any) => {
         if(result && result.body && result.body.length){
-          localStorage.setItem('user',JSON.stringify(result.body[0]));
+          localStorage.setItem('user',JSON.stringify(result.body[0])); 
         this.router.navigate(['/'])
         }
         else{
